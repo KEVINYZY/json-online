@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <title>Json 在线解析及格式化验证 - Json.hust.cc</title>
+    <title>程序猿DD - 在线Json转换工具</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
@@ -10,9 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all" />
-    <meta name="author" content="json..hust.cc" />
-    <meta name="keywords" content="json,json在线解析,json格式化,json格式验证,json转xml,xml转json"/>
-    <meta name="description" content="Json中文网致力于在中国推广Json,并提供相关的Json解析、验证、格式化、压缩、编辑器以及Json与XML相互转换等服务"/>
     <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="res/base.css" rel="stylesheet">
@@ -23,22 +19,21 @@
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- Favicons -->
+
+    <style type="text/css">
+        .adv-bottom {
+            text-align: center;
+            margin: 10px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body style="over-flow:hidden;">
 <header class="header">
     <div class="row-fluid" >
         <div class="col-md-5" style="position:relative;">
-            <a class="logo" href="/">Json.<span style="color:#555;">Hust.cc</span></a>
+            <a class="logo" href="http://blog.didispace.com">程序猿DD-在线工具 <span style="color:#555;">Json转换器</span></a>
         </div>
-        <nav class="col-md-7" style="padding:10px 0;"  align="right">
-            <!-- <div  class="navi">
-                <a href="http://www.atool.org/" target="_blank" data-placement="bottom">更多在线工具</a>
-            </div> -->
-            <div  class="navi">
-                <a href="https://chrome.google.com/webstore/detail/%E6%9E%81%E7%AE%80-json-%E6%A0%BC%E5%BC%8F%E5%8C%96/fhlnfdmpnhhakjljpllkigcegcejpoec" target="_blank" data-placement="bottom">安装 Chrome 插件</a>
-            </div>
-            
-        </nav>
         <br style="clear:both;" />
     </div>
 </header>
@@ -48,7 +43,7 @@
     <div class="col-md-5" style="padding:0;">
         <textarea id="json-src" placeholder="在此输入json字符串或XML字符串..."   class="form-control adapter_height"  style="height:550px;padding:20px;border:0;border-right:solid 1px #ddd;border-bottom:solid 1px #ddd;border-radius:0;resize: none; outline:none;"></textarea>
     </div>
-    <div class="col-md-7" style="padding:0;">
+    <div class="col-md-5" style="padding:0;">
         <div style="padding:10px;font-size:16px;border-bottom:solid 1px #ddd;" class="navi">
             <a href="#" class="tip zip" title="压缩"  data-placement="bottom"><i class="fa fa-database"></i></a>
             <a href="#" class="tip xml" title="转XML"  data-placement="bottom"><i class="fa fa-file-excel-o"></i></a>
@@ -60,8 +55,28 @@
         </div>
         <form id="form-save" method="POST"><input type="hidden" value="" id="txt-content" name="content"></form>
     </div>
+    <div class="col-md-2">
+
+        <div class="adv-bottom">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8254913025324557"
+                 data-ad-slot="8885020021"
+                 data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <div id="jd-adv" class="adv-bottom">
+            <script type="text/javascript">var jd_union_unid="335139441",jd_ad_ids="514:6",jd_union_pid="COyk/M/YKxDxpOefARoAIJLEh8QDKgA=";var jd_width=300;var jd_height=300;var jd_union_euid="";var p="ChcOVBlcFQIQNwpfBkgyTUMIRmtKRk9aZV8ETVxNNwpfBkgyeWUOaS0PRRBlAGUtbGkVTA1mH3ZQcgtZK10WABoOVhpTFTIQBVEbWR0HFwdlKwRRX083HnVaJV1WWggrWxEDEgRREl0cAhEPUStaJTIi";</script><script type="text/javascript" charset="utf-8" src="//u-x.jd.com/static/js/auto.js"></script>
+        </div>
+    </div>
     <br style="clear:both;" />
 </main>
+
+
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="res/jquery.message.js"></script>
 <script src="res/jquery.json.js"></script>
@@ -162,7 +177,23 @@ $(window).resize(function() {
 });
 $(window).resize();
 </script>
-<footer style="padding:20px;text-align:center;color:#999;">©2014 <a target="_blank" href="http://www.atool.org/">Hust.cc</a> All right reserved. Code from Json.cn
-</footer>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?3e1cdb5d0a9e409358566f06f89e048d";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
 </body>
 </html>
